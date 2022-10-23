@@ -133,3 +133,4 @@ dmypy.json
 
 media/
 static/
+profiles/migrations/0002_profile_image.py
