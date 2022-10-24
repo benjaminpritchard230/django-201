@@ -74,6 +74,10 @@
                 <span class="text-2xl"><box-icon name='log-out-circle' ></box-icon></span>
                 <span>Logout</span>
             </a>
+            <a href="{% url 'feed:new_post' %}" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
+                <span class="text-2xl"><box-icon name='comment-add'></box-icon></span>
+                <span>Create new post</span>
+            </a>
             {% else %}
             <a href="{% url 'account_login' %}" class="flex items-center space-x-1 rounded-md px-2 py-3 hover:bg-gray-100 hover:text-blue-600">
                 <span class="text-2xl"><box-icon name='log-in-circle'></box-icon></span>

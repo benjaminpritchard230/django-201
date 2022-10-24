@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+Create a new post
+
+{% endblock title %}
+
+{% block body %}
+<form method="POST" action=".">
+    {% csrf_token %} 
+    {{ form.as_p }}
+    <div>
+        <!-- component -->
+<button type="submit" class="block uppercase mx-auto shadow bg-indigo-800 hover:bg-indigo-700 focus:shadow-outline focus:outline-none text-white text-xs py-3 px-10 rounded">Create</button>
+    </div>
+{% endblock body %}
